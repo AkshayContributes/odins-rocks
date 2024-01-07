@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   --main-font-size: 4rem;
+   
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 7rem;
+    color: #ffff00;
+}
+
+.blink_me {
+    animation: blinker 1.5s linear infinite;
+}
+  
+@keyframes blinker {
+    20% {
+      opacity: 0;
+    }
+}
+
+.blink_me_2 {
+    animation: blinker_2 1.2s linear infinite;
+}
+  
+@keyframes blinker_2 {
+    50% {
+      opacity: 0;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.cta {
+    color: antiquewhite;
+    font-size: var(--main-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.weapons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.weapon {
+    font-size: 10rem;
+    margin: 0 4rem;
+}
+
+.weapon-btn {
+    font-size: 10rem;
+    margin: 0 4rem;
+    background-color: transparent;
+    border: none;
+}
+
+.weapon-btn:hover {
+   transform: scale(1.2);
+   transition: all 0.3s ease-in-out;
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: row;
+    height: 100rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 5rem;
+    padding: 2rem;
+    font-size: var(--main-font-size);
+}
+
+.player-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.computer-score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    column-gap: 10rem;
+}
+
+#player-choice {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 8rem;
+}
+
+#computer-choice {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    font-size: 8rem;
+}
+
+.result {
+  display: inline-block;
+  position: absolute;
+  top: 75rem;
+  left: 80rem;
+  z-index: 10;
+  margin-left: auto;
+  width: 30rem;
+  height: 20rem;
+  border: 0.8rem solid #eee;
+}
+
+#result-text {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.replay-btn {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem 1.5rem;
+    color: slategray;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    border: none;
+}
+
